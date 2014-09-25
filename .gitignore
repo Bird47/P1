@@ -8,6 +8,7 @@ package facto;
 import java.util.Scanner;
 public class Facto {
     public static void main(String[] args) {
+        System.out.println ("This program will find the factorial of any whole number less than 13");
         System.out.print ("Enter a whole number: ");
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
