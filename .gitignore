@@ -1,0 +1,28 @@
+/*
+Written in NetBeans IDE 8.0
+Java
+Bridger Belyea
+September 9, 2014
+*/
+package facto;
+import java.util.Scanner;
+public class Facto {
+    public static void main(String[] args) {
+        System.out.print ("Enter a whole number: ");
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        int x = num;
+        int fact = 1;
+        if (x == 0 || x == 1) System.out.println ("1");
+        if (x < 0) System.out.println ("The number must be a positive integer");
+        if (x > 12) System.out.println ("" + num + " is too big! Please enter a whole number less than 13");
+            else{
+            while (x > 1 ) {
+                fact = fact *x;
+                System.out.println(fact);
+                x --;
+            }
+            System.out.println("Factorial of " + num + " is " + fact);
+        }
+    }
+}
